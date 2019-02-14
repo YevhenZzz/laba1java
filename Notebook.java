@@ -1,62 +1,60 @@
 package com.company;
 
 public class Notebook {
-    public int CpuinGiga;
-    public int VolymeofMemory;
-    public String NameofFirm;
-    private String Videocard;
-    private String SizeofScreen;
-    protected String Vebcam;
-    protected int MassofNote;
+    public int сpuinGiga;
+    public int volymeofMemory;
+    public String nameofFirm;
+    private String videocard;
+    private String sizeofScreen;
+    protected String vebcam;
+    protected int massofNote;
     public static int battery = 3000;
 
-
     Notebook() {
+ }
 
-    }
-
-    Notebook(int CpuinGiga, int VolymeofMemory, String NameofFirm, String Videocard) {
+    Notebook(int cpuinGiga, int volymeofMemory, String nameofFirm, String videocard) {
         this();
-        this.CpuinGiga = CpuinGiga;
-        this.VolymeofMemory = VolymeofMemory;
-        this.NameofFirm = NameofFirm;
-        this.Videocard = Videocard;
+        this.cpuinGiga = cpuinGiga;
+        this.volymeofMemory = volymeofMemory;
+        this.nameofFirm = nameofFirm;
+        this.videocard = videocard;
     }
 
-    Notebook(int CpuinGiga, int VolymeofMemory, String NameofFirm, String Videocard,
-             String SizeofScreen, String Vebcam, int MassofNote) {
-        this(CpuinGiga, VolymeofMemory, NameofFirm, Videocard);
-        this.SizeofScreen = SizeofScreen;
-        this.Vebcam = Vebcam;
-        this.MassofNote = MassofNote;
+    Notebook(int cpuinGiga, int volymeofMemory, String nameofFirm, String videocard,
+             String sizeofScreen, String vebcam, int massofNote) {
+        this(cpuinGiga, volymeofMemory, nameofFirm, videocard);
+        this.sizeofScreen = sizeofScreen;
+        this.vebcam = vebcam;
+        this.massofNote = massofNote;
     }
 
     public String toString() {
-        String Information = "The Cpu of this Notebook " + CpuinGiga +
-                "\n" + "The Volyme of Memory " + VolymeofMemory +
-                "\n" + "Name of FIrm " + NameofFirm +
-                "\n" + "The name of Videocard " + Videocard +
-                "\n" + "The name Of Vebcam " + Vebcam +
-                "\n" + "The The mass of Notebook in kg " + MassofNote +
-                "\n" + "The size of notebook " + SizeofScreen + "\n";    // method
+        String Information = "The Cpu of this Notebook " + cpuinGiga +
+                "\n" + "The Volyme of Memory " + volymeofMemory +
+                "\n" + "Name of FIrm " + nameofFirm +
+                "\n" + "The name of Videocard " + videocard +
+                "\n" + "The name Of Vebcam " + vebcam +
+                "\n" + "The The mass of Notebook in kg " + massofNote +
+                "\n" + "The size of notebook " + sizeofScreen + "\n";    // method
         return Information;
 
     }
 
-    public void getVideocard(String Videocard) {
-        this.Videocard = Videocard;
+    public void getvideocard(String videocard) {
+        this.videocard = videocard;
     }
 
-    public String setVideocard() {
-        return Videocard;
+    public String setvideocard() {
+        return videocard;
     }
 
-    public void getSizeofScreen(String SizeofScreen) {
-        this.SizeofScreen = SizeofScreen;
+    public void getsizeofScreen(String sizeofScreen) {
+        this.sizeofScreen = sizeofScreen;
     }
 
-    public String setSizeofScreen() {
-        return SizeofScreen;
+    public String setsizeofScreen() {
+        return sizeofScreen;
     }
 
     public static void printStaticBattery() {
@@ -67,15 +65,15 @@ public class Notebook {
         System.out.println(battery);
     }
 
-    public void resetValues(int CpuinGiga, int VolymeofMemory, String NameofFirm, String Videocard,
-                            String SizeofScreen, String Vebcam, int MassofNote) {
-        this.CpuinGiga = CpuinGiga;
-        this.VolymeofMemory = VolymeofMemory;
-        this.NameofFirm = NameofFirm;
-        this.Videocard = Videocard;
-        this.SizeofScreen = SizeofScreen;
-        this.Vebcam = Vebcam;
-        this.MassofNote = MassofNote;
+    public void resetValues(int cpuinGiga, int volymeofMemory, String nameofFirm, String videocard,
+                            String sizeofScreen, String vebcam, int massofNote) {
+        this.cpuinGiga = cpuinGiga;
+        this.volymeofMemory = volymeofMemory;
+        this.nameofFirm = nameofFirm;
+        this.videocard = videocard;
+        this.sizeofScreen = sizeofScreen;
+        this.vebcam = vebcam;
+        this.massofNote = massofNote;
     }
 
 
